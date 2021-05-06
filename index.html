@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Steven Van's Portfolio</title>
+</head>
+
+<body>
+    <div class="page">
+        <!--navigation bar-->
+        <div class="menu">
+            <p class="menu-name">Steven Van</p>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Coding Projects</a></li>
+                    <li><a href="#">Art Portfolio</a></li>
+                </ul>
+            </nav>
+
+            <div class="contacts"></div>
+        </div>
+
+        <!--page content-->
+        <div class="content-container">
+            <button onclick="openNav()" class="btn-menu">Open</button>
+            <div class="banner"></div>
+            <div class="content">
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+                <p>Waka wakka wakka</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var menu = document.querySelector(".menu");
+        var button = document.querySelector(".btn-menu")
+        function openNav() {
+            menu.setAttribute("style", "width: 10vw; transition: 0.5s");
+            button.innerHTML = "Close"
+            button.setAttribute("onclick", "closeNav()")
+        }
+        function closeNav() {
+            menu.setAttribute("style", "width: 0; transition: 0.5s");
+            button.innerHTML = "Open"
+            button.setAttribute("onclick", "openNav()")
+        }
+    </script>
+</body>
+
+</html>
