@@ -1,115 +1,177 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="format.css">
-    <title>Steven Van's Portfolio</title>
+	<title>Steven Van's Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		* {
+			scroll-behavior: smooth;
+		}
+	</style>
 </head>
 
-<body>
-    <div class="page">
-        <!--navigation bar-->
-        <div class="menu">
-            <p class="menu-name">Steven Van</p>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Coding Projects</a></li>
-                    <li><a href="#">Art Portfolio</a></li>
-                </ul>
-            </nav>
+<body class="is-preload">
 
-            <div class="contacts"></div>
-        </div>
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
 
-        <!--page content-->
-        <div class="content-container">
-            <button onclick="openNav()" class="btn-menu">Open</button>
-            <div class="banner"></div>
-            <div class="content">
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-                <p>Waka wakka wakka</p>
-            </div>
-        </div>
-    </div>
-    <script>
-        var menu = document.querySelector(".menu");
-        var button = document.querySelector(".btn-menu")
-        function openNav() {
-            menu.setAttribute("style", "width: 10vw; transition: 0.5s");
-            button.innerHTML = "Close"
-            button.setAttribute("onclick", "closeNav()")
-        }
-        function closeNav() {
-            menu.setAttribute("style", "width: 0; transition: 0.5s");
-            button.innerHTML = "Open"
-            button.setAttribute("onclick", "openNav()")
-        }
-    </script>
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1><a href="index.html">Steven Van's Portfolio</a></h1>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<div class="inner">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="#banner">Top</a></li>
+					<li><a href="#one">FRUPAL</a></li>
+					<li><a href="#two">PERSONAL STEAM PROFILE</a></li>
+					<li><a href="#three">RANDOM MAP GENERATOR</a></li>
+					<li><a href="#four">Projects</a></li>
+				</ul>
+				<a href="#" class="close">Close</a>
+			</div>
+		</nav>
+
+		<!-- Banner -->
+		<section id="banner">
+			<div class="inner">
+				<h2>This is Steven Van</h2>
+				<p>A passionate developer who enjoys learning.</p>
+			</div>
+		</section>
+
+		<!-- Wrapper -->
+		<section id="wrapper">
+
+			<!-- One -->
+			<section id="one" class="wrapper spotlight style1">
+				<div class="inner">
+					<a href="images/frupal.png" class="image"><img src="images/frupal.png" alt="" /></a>
+					<div class="content">
+						<h2 class="major">FRUPAL</h2>
+						<p>A Classic text-based adventure game for a student group project
+							created with C++ and ncurses. Features a mode for procedurally
+							generated levels.
+						</p>
+						<a href="https://media.pdx.edu/media/t/1_g54vn3ex" class="special">View Video Example</a>
+						<a href="https://github.com/markaveliii/FRUPAL" class="special">View Repo</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Two -->
+			<section id="two" class="wrapper alt spotlight style2">
+				<div class="inner">
+					<a href="#" class="image"><img src="images/steamprofile.png" alt="" /></a>
+					<div class="content">
+						<h2 class="major">Personal Steam Profile</h2>
+						<p>A custom Steam user profile that displays all owned games using React JS.</p>
+						<a href="https://github.com/stevengvan/personal_steamprofile" class="special">View Repo</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Three -->
+			<section id="three" class="wrapper spotlight style3">
+				<div class="inner">
+					<a href="#" class="image"><img src="images/randmapgen.png" alt="" /></a>
+					<div class="content">
+						<h2 class="major">Random Map Generator</h2>
+						<p>Procedural map generator for Roblox Studio that places rooms of random orientations
+							onto a baseplate. The project is made using Lua for the language and Roblox Studio
+							for the game engine.
+						</p>
+						<a href="./videos/randmapgen.mp4" class="special">View Video Example</a>
+						<a href="https://github.com/stevengvan/RandMapGen" class="special">View Repo</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Four -->
+			<section id="four" class="wrapper alt style1">
+				<div class="inner">
+					<h2 class="major">Projects</h2>
+					<section class="features">
+						<article>
+							<a href="#" class="image"><img src="images/fanmonopolydeal.png" alt="" /></a>
+							<h3 class="major">Fanmade Monopoly Deal (WIP)</h3>
+							<p>Online version of the card game, Monopoly Deal, using React JS.</p>
+							<a href="https://stevengvan.github.io/Fanmade-Monopoly-Deal/" class="special">View Demo</a>
+							<a href="https://github.com/stevengvan/Fanmade-Monopoly-Deal" class="special">View Repo</a>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="images/studentweb.png" alt="" /></a>
+							<h3 class="major">Student Website</h3>
+							<p>Student web development project made responsive and accessible with pure HTML and CSS
+								with a bit of Javascript.</p>
+							<a href="https://stevengvan.github.io/student_website/" class="special">View Demo</a>
+							<a href="https://github.com/stevengvan/student_website" class="special">Learn more</a>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="images/conway.png" alt="" /></a>
+							<h3 class="major">Conway Game</h3>
+							<p>My implementation of the famous Conway's Game of Life using C++ and the ncurses library.
+							</p>
+							<a href="https://github.com/stevengvan/conway_game" class="special">View Repo</a>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="images/asciiimgviewer.png" alt="" /></a>
+							<h3 class="major">ASCII Image Viewer</h3>
+							<p>C based project that loads in Portable Pixmap Format images (PPM) and previews the image
+								in ASCII.</p>
+							<a href="https://github.com/stevengvan/ascii-image-viewer" class="special">Learn more</a>
+						</article>
+					</section>
+					<ul class="actions">
+						<li><a href="#" class="button">Browse All</a></li>
+					</ul>
+				</div>
+			</section>
+
+		</section>
+
+		<!-- Footer -->
+		<section id="footer">
+			<div class="inner">
+
+				<ul class="contact">
+					<li class="icon solid fa-phone">(971) 407-8731</li>
+					<li class="icon solid fa-envelope"><a href="mailto:">vansteven17@gmail.com</a></li>
+					<li class="icon brands fa-github"><a href="https://github.com/stevengvan">github.com/stevengvan</a>
+					</li>
+					<li class="icon brands fa-linkedin"><a
+							href="https://www.linkedin.com/in/steven-v-1a219a107/">linkedin.com/in/steven-v-1a219a107/</a>
+					</li>
+				</ul>
+
+				<ul class="copyright">
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
